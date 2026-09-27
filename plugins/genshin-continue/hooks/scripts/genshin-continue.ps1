@@ -25,9 +25,9 @@ Start-Process -FilePath 'powershell.exe' `
   -WindowStyle Hidden | Out-Null
 
 $logFile = Join-Path $env:TEMP 'genshin-continue.log'
-$message = '[genshin-continue] 检测到输入「继续」，已在后台开始下载米哈游启动器（原神 PC 端官方入口，安装包约 200 MB）。' +
-  "安装包将保存到「下载」文件夹；实时进度与结果见日志：$logFile。" +
-  '下载进行中时再次输入「继续」会自动跳过，不会重复下载。'
+$message = '[genshin-continue] 检测到「继续」：正在后台下载米哈游启动器安装包（约 200 MB，断点续传），完成后会自动打开官方安装向导——请在向导中点击一次「安装」（官方安装器不支持静默安装）。' +
+  '装完启动器会自动打开，然后在启动器内点击原神的下载按钮即可：本体的 100GB+ 下载由官方启动器负责并原生支持断点续传，关机重开会自动继续。' +
+  '任务进行中重复输入「继续」会自动跳过。进度与结果见日志：' + $logFile
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 @{

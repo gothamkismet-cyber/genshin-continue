@@ -1,6 +1,6 @@
 {
   "name": "genshin-continue",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "输入「继续」时自动在后台下载米哈游启动器（原神 PC 端官方入口）",
   "author": {
     "name": "workspace"
