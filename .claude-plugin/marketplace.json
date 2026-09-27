@@ -1,0 +1,19 @@
+{
+  "name": "genshin-continue",
+  "plugins": [
+    {
+      "name": "genshin-continue",
+      "source": "./plugins/genshin-continue",
+      "version": "0.2.0",
+      "description": "输入「继续」时自动在后台下载米哈游启动器（原神 PC 端官方入口）",
+      "displayName": "Genshin Continue",
+      "displayName_i18n": {
+        "zh-CN": "继续下载原神"
+      },
+      "description_i18n": {
+        "zh-CN": "输入「继续」时自动后台下载米哈游启动器（原神 PC 端官方入口）"
+      },
+      "category": "utilities"
+    }
+  ]
+}
